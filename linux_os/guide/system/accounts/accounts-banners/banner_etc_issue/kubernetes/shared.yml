@@ -14,7 +14,7 @@ spec:
     storage:
       files:
       - contents:
-          source: data:,{{.login_banner_contents}}
+          source: data:,{{.login_banner_contents | urlquery}}
         mode: 0644
         path: /etc/issue.d/legal-notice
         overwrite: true
